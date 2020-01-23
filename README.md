@@ -1,4 +1,4 @@
-Speech to Text![Terminal Screenshot](/home/saurabh/Program/Projects/audio-recognition/terminal.png)
+#### Intro
 
 1.  Converts Speech to text using Google language API.
 
@@ -50,7 +50,4 @@ Ex
 python3.6 transcribe.py transcript.mp3
 ```
 
-
-
-Sample Output
 
