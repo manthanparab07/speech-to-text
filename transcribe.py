@@ -2,6 +2,7 @@ import speech_recognition as sr
 from os import path
 from pydub import AudioSegment
 import sys
+import csv
 
 # Check for filename in argument
 if len(sys.argv) <= 1:
@@ -38,3 +39,17 @@ with sr.AudioFile(AUDIO_FILE) as source:
 
 print("Converted !!")
 print(textForm)
+
+print("Saving into File")
+
+file_desc = open(filename.split(".")[0] + ".txt", "w")
+file_desc.write(textForm)
+
+# uncomment for saving in csv
+'''
+
+with open("transcript.csv", "w", newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(textForm)
+
+'''
