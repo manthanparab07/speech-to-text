@@ -1,0 +1,2 @@
+# Ignore all wav format file generated as program output
+*.wav
